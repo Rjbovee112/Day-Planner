@@ -1,0 +1,132 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid blueviolet;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+}
+
+textarea {
+  display: inline-block;
+  width: 90%;
+  resize: none;
+}
+
+
+#wtime{
+  color: forestgreen;
+  text-align: center;
+  font-size: x-large;
+  border: 2px solid forestgreen;
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+#ltime{
+  color:red;
+  text-align: center;
+  font-size: x-large;
+  border: 2px solid red;
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+#actime{
+  color: black;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#clock{
+  width: 350px;
+  height: 100px;
+  margin: auto;
+  background-color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
