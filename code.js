@@ -13,5 +13,16 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
+//java local storage
 
+function save() {
+    var saveApt = document.getElementById('wtime').value;
+    localStorage.setItem('text', wtime);
+}
 
+function load() {
+    var storedValue = localStorage.getItem('text');
+    if (storedValue) {
+        document.getElementById('wtime').value = storedValue;
+    }
+}
