@@ -7,3 +7,6 @@ function updateTime() {
 
     clock.textContent = humanReadable;
 }
+
+setInterval(updateTime, 1000);
+updateTime();

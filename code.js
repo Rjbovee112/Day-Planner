@@ -1,8 +1,5 @@
 
 
-setInterval(updateTime, 1000);
-updateTime();
-
 //java local storage?
 
 function save() {
