@@ -15,40 +15,25 @@ function load() {
 }
 
 
-//Riley help 
-
-$(document).ready(funtion(){
-
-    $(".btn btn-primary").on("click", function () {
-        console.log($(this))
+//Riley help ? jquery for colors changing time 
+function hourColor() {
+    var currentHour = moment().hours()
+    // console.log(currentHour);
+    $("wtime").each(function () {
+        var blockHour = parseInt($(this).attr("id").split("-")[1]);
+        console.log(blockHour);
+        if (blockHour < currentHour) {
+            console.log('Hour is past')
+            $(this).addClass("past");
+        } else if (blockHour > currentHour) {
+            console.log('Hour is soon')
+            $(this).addClass("future");
+        } else {
+            console.log('Hour is now')
+            $(this).addClass("present");
+        }
     })
-
-    function hoursUpdater() {
-    var currentHour = moment().hours();
-    console.log(currentHour);
-
-    $(".wtime").each(function) {
-
-    var blockHour = ($(this).attr("id").split("-")[1])
-        console.log(typeof blockHour);
-    console.log(typeof currentHour);
-
-    if(blockHour <currentHour) {
-
-        console.log("Block Hour is before current hour");
-
-    }else if(condition) {
-        if 
-    }
-}
+    console.log("Dont touch this function it works")
 }
 
-    console.log("hoursUpdater funtion did run");
-};
 
-console.log("hoursUpdater is ready");
-hoursUpdater();
-
-var setInterval = setInterval(hoursUpdater, 15000)
-
-})

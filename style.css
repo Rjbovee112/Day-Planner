@@ -49,23 +49,6 @@ textarea {
 
 }
 
-before 
-
-after 
-
-current
-
-.ltime{
-  color:red;
-  text-align: center;
-  font-size: x-large;
-  border: 2px solid red;
-  width: 100%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
 
 #clock{
   width: 350px;
