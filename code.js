@@ -33,7 +33,6 @@ function hourColor() {
             $(this).addClass("present");
         }
     })
-    console.log("Dont touch this function it works")
 }
 
 
