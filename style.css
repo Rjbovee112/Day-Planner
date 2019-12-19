@@ -49,6 +49,19 @@ textarea {
 
 }
 
+.past {
+  background-color: black;
+  color: white;
+}
+.present {
+  background-color: blue;
+  color: white;
+}
+.future {
+  background-color: green;
+  color: white;
+}
+
 
 #clock{
   width: 350px;

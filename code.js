@@ -15,7 +15,9 @@ function load() {
 }
 
 
-//Riley help ? jquery for colors changing time 
+//Riley help/BTB help - jquery for colors changing time 
+
+
 function hourColor() {
     var currentHour = moment().hours()
     // console.log(currentHour);
@@ -33,6 +35,6 @@ function hourColor() {
             $(this).addClass("present");
         }
     })
+    console.log("Dont touch this function it works")
 }
-
 
