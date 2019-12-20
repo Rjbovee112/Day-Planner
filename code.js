@@ -6,14 +6,15 @@
 $('.btn').on('click', function () {
     var key = $(this).siblings()[0];
     key = $(key).attr('id')
-    // console.log(key)
     var comment = $("#" + key).val()
     localStorage.setItem(key, comment)
 })
 
 function printTasks() {
-
-
+    var key = $(this).siblings()[0];
+    key = $(key).attr('id')
+    var comment = $("#" + key).val()
+    comment.val(localStorage.getItem(key))
 }
 
 
@@ -36,11 +37,15 @@ function hourColor() {
             console.log('Hour is now')
             $(this).addClass("present");
         }
+        var textArea = $(this).children().children()[0];
+        var localKey = $(this).children().children()[0].attr("id");
     })
     if (currentHour <= 8 || currentHour >= 18) {
         clearStorage();
     }
 
-    console.log("Dont touch this function it works")
+
 }
 
+// printTasks()
+hourColor()
